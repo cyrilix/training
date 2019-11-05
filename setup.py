@@ -1,8 +1,8 @@
 import os
-from glob import glob
 from os.path import basename
 from os.path import splitext
 
+from glob import glob
 from setuptools import setup, find_packages
 
 
@@ -21,7 +21,11 @@ setup(
     classifiers=[
         'Programming Language :: Python :: 3.5',
     ],
-
+    entry_points={
+        'console_scripts': [
+            'train=tf_container.train_entry_point:train',
+        ]
+    },
     install_requires=['sagemaker-container-support'],
     extras_require={},
 )
