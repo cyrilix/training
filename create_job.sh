@@ -8,7 +8,7 @@ then
 fi
 echo 'Creating training job '$1
 
-training_image="117617958416.dkr.ecr.eu-west-1.amazonaws.com/robocars:latest"
+training_image="117617958416.dkr.ecr.eu-west-1.amazonaws.com/robocars:tensorflow"
 iam_role_arn="arn:aws:iam::117617958416:role/robocar-training"
 DATA_BUCKET="s3://robocars-cyrilix-learning/input"
 DATA_OUTPUT="s3://robocars-cyrilix-learning/output"
