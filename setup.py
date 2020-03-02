@@ -19,7 +19,7 @@ setup(
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
 
     classifiers=[
-        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.7',
     ],
     entry_points={
         'console_scripts': [
